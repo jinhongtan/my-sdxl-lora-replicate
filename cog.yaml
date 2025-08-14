@@ -1,0 +1,12 @@
+# cog.yaml
+build:
+  gpu: true
+  python_version: "3.11"
+  python_packages:
+    - "torch==2.1.0"
+    - "diffusers==0.25.0"
+    - "transformers==4.36.2"
+    - "accelerate==0.26.1"
+
+# This defines the interface for running predictions
+predict: "predict.py:Predictor"
